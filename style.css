@@ -37,8 +37,10 @@ header p {
 }
 
 hr {
-    color: white;
+    background-image: linear-gradient(90deg, white 0%,transparent 100%);
+    border: 0;
     width: 66.667%;
+    height: 2px;
 }
 
 main {
@@ -49,12 +51,32 @@ main {
 }
 
 .proj {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 200px;
     height: 300px;
-    border:white 3px solid;
-    background: transparent;
+    border: rgba(255, 255, 255, 0.7) 1px solid;
+    /* border: #5135A6 1px solid; */
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.04);
+    text-decoration: none;
     margin: 25px;
     padding: 15px;
+    transition: transform .2s;
+}
+
+.proj:hover {
+    transform: scale(1.1);
+}
+
+.proj > h3 {
+    margin-top: 0;
+}
+
+.screenshot {
+    width: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -74,4 +96,8 @@ footer p {
     text-align: center;
     font-size: 10px;
     margin: 0.5em auto;
+}
+
+a, a:hover {
+    text-decoration: none;
 }
