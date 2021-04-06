@@ -1,0 +1,77 @@
+html, body {
+    font-display: swap;
+    font-family: consolas, -apple-system, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(270deg, rgba(41,13,124,1) 0%,rgb(13, 3, 46) 100%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    margin: 0.5em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.icon {
+    height: 30px;
+    margin: 1em auto 0 auto;
+}
+
+hr {
+    color: white;
+    width: 66.667%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.proj {
+    width: 200px;
+    height: 300px;
+    border:white 3px solid;
+    background: transparent;
+    margin: 25px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .proj {
+        width: 300px;
+        height: 450px;
+    }
+}
+
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    text-align: center;
+    font-size: 10px;
+    margin: 0.5em auto;
+}
